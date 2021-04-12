@@ -1,0 +1,36 @@
+{
+  "name": "action-doctl",
+  "version": "2.0.0",
+  "description": "GitHub Action for DigitalOcean - doctl",
+  "main": "main.js",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4",
+    "@actions/tool-cache": "^1.5.5",
+    "ncc": "^0.3.6"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^6.8.0"
+  },
+  "scripts": {
+    "lint": "eslint main.js",
+    "test": "npm install; npm run lint",
+    "package": "ncc build main.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokago-de/action-doctl"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Lokago",
+    "CI/CD",
+    "deployment",
+    "cloud"
+  ],
+  "author": "Daniel Wieth <daniel.wieth@lokago.de>",
+  "license": "MIT",
+  "homepage": "https://lokago.de"
+}

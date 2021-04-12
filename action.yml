@@ -1,0 +1,9 @@
+name: 'GitHub Action for WP-CLI'
+description: 'Use wp-cli to manage wordpress instances'
+author: 'Daniel Wieth <daniel.wieth@lokago.de>'
+branding:
+  icon: 'droplet'
+  color: 'blue'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
